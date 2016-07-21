@@ -13,19 +13,10 @@ wCloud
         :target: https://wcloud.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/neocortex/wcloud/shield.svg
-     :target: https://pyup.io/repos/github/neocortex/wcloud/
-     :alt: Updates
 
+**Command line tool to generate wordclouds.**
 
-Command line tool to generate wordclouds.
-
+This is a command line wrapper around https://github.com/amueller/word_cloud.
 
 * Free software: MIT license
 * Documentation: https://wcloud.readthedocs.io.
-
-
-Features
---------
-
-* TODO
