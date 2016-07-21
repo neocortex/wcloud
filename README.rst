@@ -21,7 +21,10 @@ wCloud
 
 **About**
 
-This is a command line wrapper around https://github.com/amueller/word_cloud.
+This is a command line wrapper around https://github.com/amueller/word_cloud
+using click_.
+
+.. _click: http://www.click.pocoo.org
 
 
 **Installation**
@@ -30,9 +33,20 @@ This is a command line wrapper around https://github.com/amueller/word_cloud.
     $ pip install wcloud
 
 **Usage**
-::
+
+Basic::
 
    $ wcloud input.txt
+
+With options::
+
+    $ wcloud -b white -w 300 -h 200 -o output.png input.txt
+
+With mask::
+
+    $ wcloud -m mask.png -o threepio.png threepio.txt
+
+.. image:: examples/wordcloud.png
 
 * Free software: MIT license
 * Documentation: https://wcloud.readthedocs.io.
