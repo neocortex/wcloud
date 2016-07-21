@@ -47,6 +47,7 @@ With mask::
     $ wcloud -m mask.png -o threepio.png threepio.txt
 
 .. image:: examples/wordcloud.png
+   :scale: 50%
 
 * Free software: MIT license
 * Documentation: https://wcloud.readthedocs.io.
