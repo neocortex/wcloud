@@ -47,6 +47,8 @@ With mask::
     $ wcloud -m mask.png -o threepio.png threepio.txt
 
 .. image:: examples/wordcloud.png
+   :height: 1849
+   :width: 1512
    :scale: 50
 
 * Free software: MIT license
