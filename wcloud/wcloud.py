@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
-import os
-
 import numpy as np
 from PIL import Image
 from wordcloud import WordCloud
-
-stopwords = set([x.strip() for x in open(os.path.join(
-    os.path.dirname(__file__), 'stopwords.txt')).read().split('\n')])
 
 
 def _load_mask(mask_fname):
@@ -18,5 +13,5 @@ def generate_wordcloud(text, bgcolor, width, height, max_words, mask):
         mask = _load_mask(mask)
     wc = WordCloud(relative_scaling=.5, width=width, height=height,
                    background_color=bgcolor, mask=mask,
-                   max_words=max_words, stopwords=stopwords)
+                   max_words=max_words)
     return wc.generate_from_text(text)
