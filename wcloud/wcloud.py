@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 from collections import Counter
-import re
-import string
 
+import numpy as np
+from PIL import Image
 from wordcloud import WordCloud
 
 
-def clean_text(text):
-    rm_punctuation_map = dict((ord(char), u' ') for char in string.punctuation)
-    text = text.decode('utf-8').translate(rm_punctuation_map).lower()
-    return re.sub(r'\s+', ' ', text)
+def _load_mask(mask_fname):
+    return np.asarray(Image.open(mask_fname))
 
 
-def generate_wordcloud(text):
+def generate_wordcloud(text, bgcolor, width, height, max_words, mask):
+    if mask is not None:
+        mask = _load_mask(mask)
     frequencies = Counter(text.split(' '))
-    return WordCloud(
-        relative_scaling=.5, width=600, height=500, background_color='black',
-        max_words=1000).generate_from_frequencies(frequencies.items())
+    wc = WordCloud(relative_scaling=.5, width=width, height=height,
+                   background_color=bgcolor, mask=mask,
+                   max_words=max_words)
+    return wc.generate_from_frequencies(frequencies.items())

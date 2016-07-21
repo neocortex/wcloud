@@ -3,7 +3,7 @@ wCloud
 ===============================
 
 **A command line tool to generate wordclouds.**
-|
+
 
 .. image:: https://img.shields.io/pypi/v/wcloud.svg
         :target: https://pypi.python.org/pypi/wcloud
