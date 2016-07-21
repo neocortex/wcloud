@@ -2,6 +2,8 @@
 wCloud
 ===============================
 
+**A command line tool to generate wordclouds.**
+|
 
 .. image:: https://img.shields.io/pypi/v/wcloud.svg
         :target: https://pypi.python.org/pypi/wcloud
@@ -13,18 +15,22 @@ wCloud
         :target: https://wcloud.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
+.. image:: https://coveralls.io/repos/github/neocortex/wcloud/badge.svg?branch=master
+        :target: https://coveralls.io/github/neocortex/wcloud?branch=master
 
 
-**Command line tool to generate wordclouds.**
+**About**
 
 This is a command line wrapper around https://github.com/amueller/word_cloud.
 
 
-**Installation**::
+**Installation**
+::
 
     $ pip install wcloud
 
-**Usage**::
+**Usage**
+::
 
    $ wcloud input.txt
 
