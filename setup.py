@@ -21,7 +21,7 @@ setup(
     name='wcloud',
     version='0.0.1',
     description="Command line tool to generate wordclouds.",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     author="Rafael Schultze-Kraft",
     author_email='skraftr@gmail.com',
     url='https://github.com/neocortex/wcloud',
