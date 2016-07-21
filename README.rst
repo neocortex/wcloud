@@ -6,7 +6,7 @@ wCloud
 .. image:: https://img.shields.io/pypi/v/wcloud.svg
         :target: https://pypi.python.org/pypi/wcloud
 
-.. .. image:: https://img.shields.io/travis/neocortex/wcloud.svg
+.. image:: https://img.shields.io/travis/neocortex/wcloud.svg
         :target: https://travis-ci.org/neocortex/wcloud
 
 .. image:: https://readthedocs.org/projects/wcloud/badge/?version=latest
