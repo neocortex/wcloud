@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-from collections import Counter
+import os
 
 import numpy as np
 from PIL import Image
 from wordcloud import WordCloud
+
+stopwords = set([x.strip() for x in open(os.path.join(
+    os.path.dirname(__file__), 'stopwords.txt')).read().split('\n')])
 
 
 def _load_mask(mask_fname):
@@ -13,8 +16,7 @@ def _load_mask(mask_fname):
 def generate_wordcloud(text, bgcolor, width, height, max_words, mask):
     if mask is not None:
         mask = _load_mask(mask)
-    frequencies = Counter(text.split(' '))
     wc = WordCloud(relative_scaling=.5, width=width, height=height,
                    background_color=bgcolor, mask=mask,
-                   max_words=max_words)
-    return wc.generate_from_frequencies(frequencies.items())
+                   max_words=max_words, stopwords=stopwords)
+    return wc.generate_from_text(text)
