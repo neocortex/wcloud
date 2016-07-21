@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='wcloud',
-    version='0.0.1',
+    version='0.1.0',
     description="Command line tool to generate wordclouds.",
     long_description=readme,
     author="Rafael Schultze-Kraft",
@@ -41,7 +41,7 @@ setup(
     zip_safe=False,
     keywords='wcloud',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
