@@ -1,7 +1,9 @@
-env:
-- TOXENV=py27
-- TOXENV=py35
-install: pip install -U tox
 language: python
-python: 3.5
+matrix:
+    include:
+        - python: 2.7
+          env: TOXENV=py27
+        - python: 3.5
+          env: TOXENV=py35
+install: pip install -U tox
 script: tox -e ${TOXENV}
