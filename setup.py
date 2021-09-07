@@ -8,7 +8,7 @@ with open('README.rst') as readme_file:
 
 requirements = [
     'Click>=6.0',
-    'Pillow==3.3.0',
+    'Pillow==8.3.2',
     'numpy==1.11.1',
     'wordcloud==1.2.1'
 ]
